@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/e0f661c42f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mooli&family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Hair Salon</title>
+  </head>
+  <body>
+    <header>
+      <div class="nav">
+        <h3>Beauty care</h3>
+        <div class="social">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-x-twitter"></i>
+        </div>
+      </div>
+      <div class="header-text">
+        <h1>Transform Your Look</h1>
+        <p>
+          Experience the best hair salon services in Vale Vilão. Our skilled
+          stylists
+          <br />
+          will creat a stunning new look for you.
+        </p>
+        <button>Book Now</button>
+      </div>
+      <img src="./images/salon.jpg" alt="" />
+    </header>
+    <main>
+      <div class="about-us">
+        <h2>About Us</h2>
+        <p>
+          Welcome to Beauty Care, the premier hair salon in Vale Vilão. With our
+          team of highly skilled stylists and our commitment to exceptional
+          customer service, we strive to provide our clients with the ultimate
+          salon experience. Whether you're looking for a simple trim or a
+          complete hair transformation, our talented professionals are here to
+          create the perfect look for you. <br />
+          <br />
+          At Beauty Care, we believe that your hair is your ultimate accessory.
+          That's why we stay up-to-date with the latest trends and techniques,
+          ensuring that we can offer our clients the most innovative and stylish
+          hair services. From precision haircuts to vibrant color treatments, we
+          are dedicated to helping you achieve the beautiful and healthy hair
+          you've always desired. Visit us at Hair and let our expert team pamper
+          you with our top-notch services and leave you feeling confident and
+          fabulous.
+        </p>
+      </div>
+      <div class="services">
+        <h2>Our Services</h2>
+        <div class="row">
+          <div class="col">
+            <img src="./images/cut.jpg" />
+            <h5>Haircut and Styling</h5>
+            <p>
+              Experience Our expert haircuts and stylish designs to enhance your
+              unique look.
+            </p>
+            <button>More info</button>
+          </div>
+          <div class="col">
+            <img src="./images/color.jpg" />
+            <h5>Hair Coloring</h5>
+            <p>
+              Transform your hair with our professional coloring techniques,
+              ranging from subtle highlights to bold shades.
+            </p>
+            <button>More info</button>
+          </div>
+          <div class="col">
+            <img src="./images/treatement.jpg" />
+            <h5>Haircut and Styling</h5>
+            <p>
+              Indulge in our nourishing hair treatments to restore shine,
+              strength, and revitalize your locks.
+            </p>
+            <button>More info</button>
+          </div>
+        </div>
+      </div>
+      <div class="testimony">
+        <div class="testi-content active">
+          <div class="slider">
+            <p>
+              The service I received was top-notch! The staff was friendly and
+              efficient, and the job was done quickly and to a high standard.
+            </p>
+            <h6>-Jane S</h6>
+          </div>
+        </div>
+        <div class="testi-content">
+          <div class="slider">
+            <p>
+              I had an amazing experience at hair salon in Meknes! The staff was
+              friendly and skilled, giving me the perfect haircut I wanted. The
+              salon had a relaxing atmosphere and the prices were reasonable.
+            </p>
+            <h6>-Will S</h6>
+          </div>
+        </div>
+        <div class="testi-content">
+          <div class="slider">
+            <p>
+              I would highly recommend this salon to anyone looking for a
+              professional and relaxing hair salon experience. Thank you!
+            </p>
+            <h6>-Jennifer L</h6>
+          </div>
+        </div>
+        <i class="fa-solid fa-circle-arrow-right" onclick="next()"></i>
+        <i class="fa-solid fa-circle-arrow-left" onclick="prev()"></i>
+      </div>
+      <div class="contact">
+        <h2>Contact Us</h2>
+        <div class="info">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12377.79274427387!2d-8.111928723170141!3d39.14178669100901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd18363d5a90aae3%3A0xdc0014d1090e44ff!2zVmFsZSBWaWzDo28sINin2YTYqNix2KrYutin2YQ!5e0!3m2!1sar!2sma!4v1694797882681!5m2!1sar!2sma"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <form>
+            <input type="text" name="" placeholder="Your name ..." />
+            <input type="email" placeholder="Your Email ..." />
+            <textarea
+              cols="30"
+              rows="10"
+              placeholder="Your Message ..."
+            ></textarea>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="row-f">
+        <h3>Beauty care</h3>
+        <div class="social">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-x-twitter"></i>
+        </div>
+      </div>
+
+      <p>Made By Houda BRZ</p>
+    </footer>
+    <script>
+      let index = 0;
+      let sliders = document.querySelectorAll(".testi-content");
+      function next() {
+        sliders[index].classList.remove("active");
+        index = (index + 1) % sliders.length;
+        sliders[index].classList.add("active");
+      }
+      function prev() {
+        sliders[index].classList.remove("active");
+        index = (index - 1 + sliders.length) % sliders.length;
+        sliders[index].classList.add("active");
+      }
+    </script>
+  </body>
+</html>
