@@ -145,7 +145,6 @@ h2 {
 form {
   display: flex;
   flex-direction: column;
-  color:#eee;
 }
 form button {
   border-radius: 40px;
@@ -162,6 +161,7 @@ form textarea {
   margin-bottom: 10px;
   border-radius: 40px;
   border: none;
+  color: #878675;
 }
 footer {
   padding: 100px 10%;
