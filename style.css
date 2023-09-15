@@ -145,6 +145,7 @@ h2 {
 form {
   display: flex;
   flex-direction: column;
+  color:#eee;
 }
 form button {
   border-radius: 40px;
